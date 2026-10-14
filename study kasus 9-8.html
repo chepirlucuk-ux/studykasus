@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FORM</title>
+    <script type="text/javascript">
+        function baca() {
+            var no = document.formku.input.value;
+            alert("NIS Anda : " + no);
+        }
+    </script>
+</head>
+<body>
+    <h1>Masukkan NIS Anda</h1>
+    <form name="formku">
+        NIS <input type="text" name="input">
+        <input type="button" name="button" value="OK" onclick="baca()">
+    </form>
+</body>
+</html>

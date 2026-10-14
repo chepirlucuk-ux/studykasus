@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fungsi Back dan Forward</title>
+    <script type="text/javascript">
+        function mundur1() {
+            history.back(); // mundur satu halaman sebelumnya
+        }
+
+        function mundur2() {
+            history.go(-2); // mundur dua halaman sebelumnya
+        }
+
+        function maju() {
+            history.forward(); // akses satu halaman berikutnya
+        }
+
+        function maju2() {
+            history.go(2); // akses dua halaman berikutnya
+        }
+    </script>
+</head>
+<body>
+    <input name="mundur" type="button" value="<" onClick="mundur1()">
+    <input name="mundur2" type="button" value="<<" onClick="mundur2()">
+    <input name="maju" type="button" value=">" onClick="maju()">
+    <input name="maju2" type="button" value=">>" onClick="maju2()">
+</body>
+</html>
